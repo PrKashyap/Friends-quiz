@@ -1,5 +1,4 @@
-var readlineSync = require("readline-sync");
-var username = readlineSync.question("What is your name?");
+var username = prompt("What is your name?");
 
 console.log("Hi " + username + " !");
 let score = 0;
@@ -144,7 +143,7 @@ d)Zachary`,
 function questonaire(arr) {
   for (let i = 0; i < arr.length; i++) {
     console.log(arr[i].ques);
-    var ans = readlineSync.question("What is your answer? ");
+    var ans = prompt("What is your answer? ");
 
     if (ans == arr[i].ans) {
       console.log("Right!");
@@ -171,7 +170,7 @@ for (let i = 0; i < highScore.length; i++) {
 function levelTwo(arr2) {
   for (let i = 0; i < arr2.length; i++) {
     console.log(arr2[i].ques);
-    var ans = readlineSync.question("What is your answer? ");
+    var ans = prompt("What is your answer? ");
 
     if (ans == arr[i].ans) {
       console.log("Right!");
